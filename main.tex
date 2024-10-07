@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MODELE DE MANUSCRIT DE THESE 
+% DE L'UNIVERSITE PARIS CITE
+% OFFICIEL
+
+% LaTeX Template
+% Version overleaf (14/10/2023) 
+% Format BOOK
+% Par Aleksandra SAVINA, PhD
+% https://www.overleaf.com/latex/templates/phd-thesis-template-universite-paris-cite/jycfrbbjbgrm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+%	PREAMBULE // PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,12pt,twoside,french]{book}
+\usepackage{PackagesDeAmbroise}
+\selectlanguage{french}%
+\linespread{1.2} % Line spacing of 1.5 times the normal spacing
+\title{Memoire M2 ISF _ DSS_SD3_3C}
+\author{Ambroise Warnery}
+\date{August 2024}
+
+% Headers footers and glossaires
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+\makeglossaries
+\makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+	\begin{titlepage}
+		\begin{center}
+				\includegraphics[height=2.5cm]{figures/cover/logoAssas.png}
+		\end{center}
+	
+		\begin{center}
+		
+\vspace*{.03\textheight}
+\textsc{\LARGE Université Paris-Panthéon-Assas}\\[0.2cm] % Univ name
+		\large M2 - Ingénierie Statistique et Financière\\
+  			\vfill
+ 
+	 		\rule{\textwidth}{0.8pt} \\ % Horizontal line
+	 		\vspace{10pt}
+	 		 { \LARGE \bfseries Conception et évaluation de politiques publiques dans le cadre des retraites} % Thesis title
+	 		 \vspace{10pt}
+	 		 \rule{\textwidth}{0.8pt} \\ % Horizontal line
+		\end{center}
+		
+		\vfill
+		% Author and supervisor	
+		\begin{center}
+			Par \textsc{\Large Ambroise WARNERY}\\[1cm] 
+			Mémoire d'alternance\\[1.2cm]
+			Dirigée par \textsc{\large Joseph LANFRANCHI}\\[0.2cm]
+            Et par \textsc{\large Taha BENABDELAZIZ}\\[0.2cm] 
+			Présenté et soutenue le 27/09/2024 %renseigner la date et choisir le type de soutenance
+		\end{center}
+		
+		\vspace{1cm}
+
+
+	\newpage %page de garde vide
+	\thispagestyle{empty} %page de garde vide
+	\end{titlepage}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\frontmatter % numérote les pages en chiffres romains jusqu'a la commande mainmatter
+
+%----------------------------------------------------------------------------------------
+%	RESUME ET ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/resume} %résumé en francais
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/remerciements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+%\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+%\setcounter{tocdepth}{3}
+\tableofcontents % Prints the main table of contents
+
+%\listoffigures % Prints the list of figures
+%\addcontentsline{toc}{chapter}{Liste des figures}
+
+%\listoftables % Prints the list of tables
+%\addcontentsline{toc}{chapter}{Liste des tableaux}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Liste des abréviations-
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/glossaire}
+\glsaddall
+
+% --------------------------------------------------------------
+%                         Début du corps
+% --------------------------------------------------------------
+
+\mainmatter
+\setlength{\parskip}{1.2em}
+
+\renewcommand{\baselinestretch}{1.1} %interligne pour le texte standard
+
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+%\chapter*{Introduction}
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Introduction}}
+\input{chapters/intro.tex} %partie introduction ou avant-propos
+
+\fancyhead{} % clear all header fields
+
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+\input{chapters/chap1}
+\input{chapters/chap2}
+
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Conclusion}}
+\input{chapters/conclusion.tex}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+%\printbibliography %Prints bibliography
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Bibliographie}}
+\printbibliography[heading=bibintoc, title={Bibliographie "Adaptez le style bibliographique en fonction de votre discipline"}]
+
+
+
+\end{document}  

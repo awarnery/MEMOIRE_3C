@@ -1,0 +1,457 @@
+\chapter{Réforme de l'assiette sociale des Travailleurs Indépendants et des Professions Libérales} % Main chapter title
+
+
+Contrairement aux employeurs et aux salariés, les travailleurs indépendants (artisans, commerçants, professionnels libéraux, avocats, travailleurs non-salariés agricoles) cotisent aujourd’hui sur deux assiettes différentes selon la nature des prélèvements. L'une pour les cotisations et l'autre pour les contributions sociales (CSG et CRDS).
+
+Ces deux assiettes sont circulaires, c’est-à-dire qu’il est nécessaire de connaître le montant des cotisations et des contributions pour déterminer l’assiette permettant de calculer ces mêmes cotisations et contributions, ce qui induit une forte complexité. 
+
+De plus, en 2019, un rapport sur les travailleurs indépendants rendu par le Haut Conseil du Financement de 
+la Protection Sociale (HCFIPS) établi que pour un euro de prélèvement social, ces derniers payent plus de CSG-CRDS et moins de cotisations que les salariés. Cette différence s'explique par le fait que l’assiette de CSG-CRDS (non créatrice de droits) soit supérieure à celle des cotisations (prise en compte pour la détermination des droits vieillesses et d’indemnités journalières). Cette situation est peu équitable vis-à-vis des salariés dont l’assiette brute, sert à la fois pour le calcul des cotisations et de la CSG-CRDS.
+
+Afin de gommer cette injustice et dans un effort de simplification de la lisibilité du calcul des cotisations pour les affiliés, une reforme des l'assiette sociale des travailleurs indépendants et des professions libérales est en cours.
+Ce chapitres à vocation à expliquer plus précisément le cadre dans lequel cette réforme a lieu, ses objectifs, et le travail que le Pôle Actuariat a réalisé pour la mener à bien.
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
+\section{Paysage de la retraite en France}
+
+
+\subsection{La retraite par répartition}
+
+Le système de retraite français est construit autour de deux grands piliers.
+La retraite de base et la retraite complémentaire.
+La retraite de base des salariés du secteur privé, des travailleurs indépendants, des contractuels de droit public et des artistes-auteurs est gérée par la Caisse National d'Assurance Vieillesse (CNAV). La retraite de base des professionnels libéraux est gérée par la Caisse nationale d'assurance vieillesse des professions libérales (CNAVPL).
+Les régimes complémentaires des professions libérales sont gérées par les 10 sections professionnelles.
+
+Tous ces régimes de retraite sont gérés par répartition, c'est à dire que les cotisations des travailleurs actifs servent à financer les pensions des retraités. Chaque génération d'actifs cotise pour payer les retraites des générations précédentes, ce qui repose sur un principe de solidarité intergénérationnelle. 
+
+Aujourd'hui, le système de retraite fait face à de nombreux défis. Le vieillissement de la population, avec l'allongement de l'espérance de vie et le départ à la retraite des baby-boomers, met sous pression l'équilibre du financement. Le taux de cotisation des actifs doit augmenter ou le montant des pensions doit baisser pour compenser cette évolution, à moins d'augmenter l'âge de départ à la retraite. Ces enjeux poussent à des réformes régulières.
+
+Les dernières réformes des retraites, comme celle de 2023 en France, ont principalement visé à repousser l'âge légal de départ à la retraite (de 62 à 64 ans), à allonger la durée de cotisation pour obtenir une pension complète, et à harmoniser certains régimes. Ces réformes cherchent à garantir la pérennité du système en équilibrant les dépenses et les recettes, tout en tenant compte de l'évolution démographique. Les débats autour des retraites restent vifs, notamment sur la justice sociale et la répartition des efforts entre les différentes catégories de la population.
+
+\subsection{Les régimes de base des TI et PL}
+
+La Caisse nationale d'assurance vieillesse des professions libérales (CNAVPL) a été créée pour répondre aux besoins spécifiques de retraite des professionnels exerçant des métiers indépendants. Fondée en 1948, elle regroupe dix sections professionnelles couvrant diverses catégories, comme les médecins, dentistes, pharmaciens, avocats, experts-comptables, vétérinaires, etc. La CNAVPL gère le régime de base des libéraux, communs à toutes les sections, tandis que celles-ci ont la responsabilité de gérer leurs propres régime complémentaire, adapté aux particularités économiques et professionnelles de ses affiliés. Le système fonctionne par répartition, où les cotisations des actifs financent les pensions des retraités.
+
+La CNBF a été une section de sa création de 1948 à sa transformation en organisme autonome en 1954.
+
+Le règime de la CNAVPL est un régime par point, ce qui est assez rare pour un régime de base. Au 30 juin 2023, la CNAVPL a, 880 000 cotisants, 425 000 retraités et 53 000 conjoints survivants bénéficiant d'une pension de réversion. La cotisation se calcule comme suit. Une cotisation de 8,23 \% est prélevée sur la part du revenu annuel située en dessous du plafond de la Sécurité sociale (PASS). Une cotisation de 1,87 \% est prélevée sur la part du revenu annuel située en dessous de 5 PASS.
+En pratique, un affilié cotise donc 10,10 \% (8,23 \% + 1,87 \%) jusqu'au PASS et 1,87 \% entre 1 et 5 PASS.
+
+
+\subsection{Les régimes de complémentaires des TI et PL}
+
+Tous d'abord, voilà la liste des caisses de la CNAVPL ainsi que la profession de leurs affiliés.
+
+\begin{itemize}
+    \item \textbf{Les dix sections de la CNAVPL :}
+    \begin{itemize}
+        \item \textbf{CARCDSF} : chirurgiens-dentistes et sages-femmes
+        \item \textbf{CARMF} : médecins
+        \item \textbf{CARPIMKO} : infirmiers, masseurs-kinesithérapeutes, pédicures-podologues, orthophonistes et orthoptistes
+        \item \textbf{CARPV} : vétérinaires
+        \item \textbf{CAVAMAC} : agents généraux d’assurance
+        \item \textbf{CAVEC} : experts-comptables
+        \item \textbf{CAVOM} : officiers ministériels, officiers publics et des compagnies judiciaires
+        \item \textbf{CAVP} : pharmaciens
+        \item \textbf{CIPAV} : architectes, architectes d’intérieur, économistes de la construction, maîtres d’œuvre, géomètres, ingénieurs conseils, moniteurs de ski, guides de haute montagne, accompagnateurs de moyenne montagne, ostéopathes, psychologues, psychothérapeutes, ergothérapeutes, diététiciens, chiropracteurs, artistes non créateurs d’œuvres originales, experts en automobile, experts devant les tribunaux, guides conférenciers, mandataires judiciaires à la protection des majeurs
+        \item \textbf{CPRN} : notaires
+    \end{itemize}
+\end{itemize}
+
+Entre les différentes professions libérales, le panorama des barèmes de cotisations et prestations est caractérisé par une grande diversité. En effet, si le régime de base de retraite est commun à l’ensemble des professions libérales, chacune des sections composant la CNAVPL dispose d’un régime complémentaire propre et éventuellement d’un régime « sur-complémentaire » de prestations complémentaire de vieillesse dit PCV (anciennement « avantage social vieillesse » ou ASV) pour les sections médicales. Chaque section gère également un régime d’invalidité-décès.
+
+Les régimes de retraite et d’invalidité-décès peuvent sensiblement varier au sein d’une même section. C’est par exemple le cas pour la CARCDSF, qui regroupe depuis 2009 les chirurgiens-dentistes et sages-femmes, et dont le régime PCV est distinct selon la profession. Il existe également des divergences au sein d’une même profession : par exemple les médecins de secteur 1 bénéficient d’une participation des assurances maladie, notamment sur leurs cotisations du régime de base et du régime PCV, à la différence de leurs confrères du secteur 2. Cette différence sera détaillé dans un exemple plus bas.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
+\section{Contexte et objectifs de la réforme}
+\label{sec:2.2}
+
+\subsection{Le fonctionnement de l'assiette aujourd'hui}
+
+Pour bien comprendre la circularité du calcul de l'assiette actuelle, il est nécessaire de bien comprendre la décomposition du \textbf{Superbrut}. Le superbrut est un concept utilisé pour désigner le salaire comprenant non seulement les cotisations salariales (qui sont déduites du salaire brut classique), mais aussi l'ensemble des cotisations patronales. Dans le cas des travailleurs indépendants ou des professions libérales, le concept de superbrut s'applique différemment. Ces travailleurs ne perçoivent pas de salaire brut comme les salariés, car ils sont à la fois employeur et salarié de leur propre activité. Ils doivent donc payer l'intégralité des cotisations sociales (à la fois la part "salariale" et la part "patronale") sur leurs revenus professionnels. La figure ci-dessous reproduit cette décomposition par strates de prélèvement.  
+
+\vspace{0.2cm}
+
+\begin{figure}[!h]
+    \center
+    \input{figures/chap2/superbrut} %créer avec https://www.mathcha.io/
+    \caption{Décomposition du Super-Brut}
+\end{figure}
+
+\newpage
+
+Le Super brut se décompose ainsi selon la formule suivante : 
+
+\vspace{0.2cm}
+
+\begin{equation}
+\mathbf{
+Superbrut = Revenu_{net} + CSG_{non-d\Acute{e}ductible} + CSG_{d\Acute{e}ductible} + Cotisations \: Sociales \label{equa_prp}
+}
+\end{equation}
+
+\vspace{0.5cm}
+
+Où l'assiette des cotisations \footnote{Cotisations sociales hors CSG-CRDS} - qui permet in-fine de calculer les cotisations sociales dues\footnote{Les cotisations de sécurité sociale dues par les travailleurs indépendants non agricoles ne relevant pas du dispositif prévu à l'article L. 613-7
+sont assises sur une assiette nette constituée du montant des revenus d'activité indépendante à retenir, sous réserve des dispositions des II à IV du présent article, pour le calcul de l'impôt sur le revenu, diminuée du montant de cotisations calculé selon les modalités fixées au V. - (Articles L131-6 à L131-6-2)} - est composé du \(Revenu_{net}\) et de la \(CSG_{non-d\Acute{e}ductible}\) tel que : 
+
+\vspace{0.2cm}
+
+\begin{equation}
+\mathbf{
+Assiette_{Cotisations \: Sociales} = Revenu_{net} + CSG_{non-d\Acute{e}ductible} 
+}
+\end{equation}
+
+\vspace{0.5cm}
+
+De même pour l'assiette de cotisation de la CSG-CRDS : 
+
+\vspace{0.2cm}
+
+\begin{equation}\label{eq:test}
+\mathbf{
+Assiette_{\: CGS-CRDS} = Revenu_{net} + CSG_{non-d\Acute{e}ductible} + Cotisations \: Sociales
+}
+\end{equation}
+
+\begin{equation}
+\mathbf{
+Assiette_{\: CGS-CRDS} = SuperBrut - CSG_{D\Acute{e}ductible} \tag{\ref{eq:test}}
+}
+\end{equation}
+
+\vspace{0.2cm}
+
+Le schéma suivant permet de comprendre la décomposition de ces deux assiettes. La présence de la CSG non-déductible  dans l'écriture des deux assiettes nous permet de matérialiser la jonction entre le Super Brut et le Revenu Net. 
+
+\begin{figure}[!h]
+    \center
+    \input{figures/chap2/assiettes_circulaires}
+    \caption{Décomposition des deux assiettes circulaires}
+\end{figure}
+
+
+
+\subsection{Conception administrative de la réforme de l'assiette}
+
+Dans son rapport de 2019, le HCFIPS a proposé une réforme de l'assiette en vue d'augmenter l'assiette de cotisations et de baisser l'assiette de CSG-CRDS par un mécanisme d'abattement.
+Cette proposition avait été soutenues par les  différentes organisations représentant les travailleurs indépendants (TI), y compris le Conseil de la protection des travailleurs indépendants (CPSTI). Retardée pour être incluse dans le cadre plus large du projet de loi instituant un système universel de retraite en 2020 qui n’a pu aller à son terme, il a été décidé que cette réforme de l’assiette serait menée à bien indépendamment. 
+
+Le cabinet de la Première ministre a  proposé l’inscription en PLFSS 2023 d’une réforme de l’assiette de cotisations et contributions sociales des travailleurs indépendants en vue de la simplifier et d’en rapprocher le mode de calcul de celle des salariés. Cette réforme permettrait d’assurer une plus grande équité et une meilleure comparabilité avec les cotisations des salariés, de simplifier le calcul et de favoriser l’acquisition de droits sociaux.
+
+Finalement le Gouvernement a fait le choix de la concertation et des discussions ont eu lieu avec les organisations tout au long de l'année 2023. La réforme a finalement été introduite en Loi de Financement de la Sécurité Sociale 2024. 
+
+La loi prévoyant la réforme de l'assiette ayant été votée, des décrets d'application doivent maintenant est publié pour mettre en oeuvre la réforme.
+
+C'est sur le contenu et la rédaction de ces décrets que moi et mes collègues du bureau 3C avons travaillé.
+
+
+
+\subsection{Les objectifs de la réforme}
+
+
+\subsubsection{Simplifier le calcul de l'assiette}
+
+Le premier objectifs de la réforme est de simplifier le calcul de l'assiette.
+
+La LFSS 2024 a permit d'inscrire dans la loi les différentes mesures suivantes :
+\begin{itemize}
+    \item La fusion des deux assiettes, CSG-CRDS et sociales, permettant de rééquilibrer le poids relatif des cotisations par rapport à celui de la CSG et de la CRDS, dont l’assiette sera réduite ;
+    \item La définition d'un mode de calcul simple et direct à partir du revenu global, pour mettre fin à la circularité du calcul. L’assiette serait déterminée par application au revenu « super-brut », soit les revenus professionnels avant tout prélèvement, d’un abattement forfaitaire globalement représentatif des cotisations et contributions. 
+\end{itemize}
+
+Le niveau et les modalités de cet abattement forfaitaire appliqué au super-brut sont des paramètres essentiels de la réforme dans la mesure où ils déterminent le niveau de l’assiette de cotisation et, partant, le niveau de prélèvements et de droits créés. Cet abattement définis le niveau de l’assiette des cotisations et contributions dont certaines sont universelles, il ne peut être différent en fonction des catégories de travailleurs indépendants. Pour la plupart des artisans et commerçants, le niveau de prélèvements sociaux est compris entre 39\% et 46\% de leur revenu brut, et représente donc entre 28\% et 31,5\% de leur « super-brut ». L'abattement a été fixé à 26 \% du « super-brut ». Il permet d’établir une assiette unique de cotisations et contributions sociales supérieure à l’assiette actuelle de cotisations des artisans et commerçants, et nettement inférieure à leur assiette de CSG-CRDS. A taux de cotisations inchangés, il induit aussi une baisse de prélèvements (la baisse de la CSG-CRDS étant supérieure à la hausse de cotisations), et une amélioration des droits sociaux créés, en vieillesse et en indemnités journalières, à due proportion de la hausse de l’assiette de cotisations sociales (entre 2,7 et 8\%, sauf pour les très bas revenus qui cotisent sur une assiette minimale). 
+
+Le décret sur lequel nous travaillons actuellement va permettre d'affiner le fonctionnement de cet abattement de 26\%. En effet, les bas revenus et les hauts revenus ont des cotisations respectivement minimales et plafonnées. Le décret procède donc à la fixation d'un plancher et d'un plafond d'abattement pour reproduire dans la réforme ces réalités "extrêmes". S’agissant du plancher, ce montant minimal ne peut pas être supérieur au montant annuel des cotisations minimales de retraite de base, qui sont calculées sur une assiette égale à 450 fois le SMIC horaire de l’année, de façon à garantir l’acquisition de trois trimestres, soit un montant de 930,54 € en 2024. Comme présenté aux professions, le décret fixe ce montant plancher à 1,76 \% du PASS, soit 816,08 € en 2024. S’agissant du plafond, il est prévu que le montant maximal ne puisse être inférieur au montant du PASS de l’année. Comme présenté aux professions, le décret le fixe à 130 \% du montant du PASS de l’année, soit 60 278,40 € en 2024.
+
+
+\subsubsection{Céer de nouveaux droits}
+
+Le second objectif de la réforme est de modifier les paramètres de taux afin que la réforme permette d'acquérir davantage de droits, sans hausse ni baisse de prélèvements au global.
+
+La loi, en prévoyant une baisse importante de l'assiette de CSG-CRDS par l'abatttement de 26\%, prévoit donc une baisse de CSG-CRDS. 
+Il s'en dégage une "marge de manoeuvre". Un montant de recettes fiscales que l'on va transférer de la CSG-CRDS vers des hausses de cotisations maladie, retraite de base et retraite complémentaire.
+Le nouveau calcul de l’assiette sociale conduirait à une perte spontanée de - 2,15 Md€ de recettes pour les finances publiques, dont - 2,8 Md€ au titre de la CSG-CRDS partiellement compensés par une hausse spontanée de cotisations maladie (+ 350 M€) et vieillesse (+ 230 M€) et famille (+ 70 M€). Afin de compenser cet « effet assiette », une hausse des taux de cotisations d’assurance vieillesse de base et d’assurance maladie a été négociée avec les organisations professionnelles et intégrée dans les sous-jacents de la LFSS 2024.
+
+La réponse à ce deuxième objectif se décline en trois sous-parties : 
+
+\begin{itemize}
+
+    \item \textbf{Le barème maladie} Le barème maladie est actuellement différent en fonction des catégories de travailleurs. Après la réforme, il devient unique et est refondu dans le sens d’une plus grande progressivité jusqu’à un montant égal à 300 \% du PASS (le taux est maintenu au niveau actuel de 6,5\% sur la fraction supérieure). Il est globalement plus élevé : jusqu’à 8,5 \% pour un revenu de 300 \% du PASS contre 6,7 \% pour les TI relevant du régime général et 6,5 \% pour les professions libérales et les exploitants agricoles à titre principal ou exclusif auparavant. 
+
+    \item \textbf{La retraite de base} Le projet de décret prévoit également le relèvement des taux de cotisation dédiées au financement de la retraite de base, dans une dynamique de maintien de l’égalité ou de convergence avec les salariés. Ce relèvement est de 0,12 point pour les travailleurs indépendants relevant du régime général. Portant sur la fraction applicable à l’ensemble du revenu, il réplique ainsi celui intervenu dans le cadre du premier épisode de transfert de taux ATMP/ vieillesse de base des salariés annoncé à l’occasion de la réforme des retraites de 2023 et mis en œuvre par décret au 1er janvier 2024 (contrairement aux salariés, ce relèvement n’est pas compensé par une baisse équivalent du taux ATMP, risque auquel les travailleurs indépendants ne sont pas obligatoirement soumis). Ce relèvement est de 0,5 point pour les professions libérales affiliés à la caisse nationale d'assurance vieillesse des professions libérales (CNAVPL), sur la fraction des revenus inférieure au niveau du PASS. Cette hausse d’ampleur supérieure se justifie par le niveau relativement faible des cotisations au titre de la retraite de base des professionnels libéraux (10,1 \% avant réforme contre 17,75 \% pour les travailleurs indépendants du régime général au niveau du PASS). Il permet également de compenser les baisses de cotisations spontanée (et donc de droits) liée à la réduction de l’assiette sociale pour certaines professions. Le nombre maximal de points de retraite associés à la tranche 1 est augmenté à due concurrence afin de traduire en droits ce renforcement de l’effort contributif. Tous ces relèvements ont été présentés aux organisations professionnelles et font partie de l’équilibre global qui a été convenu avec eux. 
+    
+    \item \textbf{La retraite complémentaire} Finalement, il reste une enveloppe de 1,35 Md€ de baisse de prélèvements sociaux. Cette somme va être "recyclé" par une hausse à due concurrence des cotisations des régimes de retraite complémentaire. Toujours dans l'objectif de créer des droits supplémentaires à la retraite et de garantir la neutralité financière de la réforme. Cette section de la réforme à impliquer un travail important du pôle Actuariat que je détaillerais dans la sous-partie appelé 'Echanges avec les caisses de retraites et recyclage de la perte en finances publiques'.
+
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
+\section{Chiffrages de la modification de l'assiette}
+
+\subsection{Le programme SICLOP}
+
+
+Afin de pouvoir mesurer les impacts de cette réforme sur les cotisations des PL et des TI ainsi que sur les recettes sociales, un outil de simulation a été développé.
+Cet outil s'appelle SICLOP et a été programmé sous R. Il permet d’effectuer des calculs de cotisations sur des populations de tailles importantes soumises à des barèmes divers, et ce en tenant compte de critères individuels tels que le revenu ou l’âge. En outre, le simulateur SICLOP tient compte de la circularité de l’assiette dans le calcul des cotisations. 
+
+Le fonctionnement de SICLOP repose sur les données qu'il utilise en entrée. Dans celles-ci on retrouve :
+\begin{itemize}
+    \item Les données économiques des 10 dernières années : Montant du PASS, SMIC horaire, inflation
+
+    \item Les barèmes de cotisation à chacune des caisses de retraites du périmètre de SICLOP. Plafond, planchers, taux de la cotisation, montant de la cotisations etc. 
+    Nous tenons à jour ces données à la main en remplissant une nouvelle ligne chaque année avec les nouvelles valeurs.
+
+    \item La distribution des affiliés de chacune de ces caisses de retraite en fonction de leurs revenus annuels et de la génération à laquelle ils appartiennent. Pour toutes les caisses nous avons les revenus de 0 à 10 PASS, avec un pas de 0,05 PASS et pour les générations de 1940 à 2000. Seule la caisse des notaires nous envoie le détail de la distribution des revenus jusqu'à 20 PASS. Ces données nous sont envoyés par les caisses, en suivant un modèle très strict, défini par le créateur de SICLOP, afin que ce derniers puissent ingérer les données sans erreurs.
+    	\begin{center}
+			\includegraphics{figures/chap2/inputSICLOP.png}
+		\end{center}
+\vspace{-0.5cm}
+
+    Note de lecture : Dans cette caisse de retraite, trois affiliés sont de la génération 1944 et ont un revenus équivalent à 15\% du PASS.
+\end{itemize}
+
+SICLOP, afin d'être le plus précis possible, est une sorte de somme de cas types. Dans un premier temps, il calcule les deux assiettes ainsi que toutes les cotisations et contributions sociales ante reformes. Ces calculs sont effectués pour des individus de chaque caisse gagnant entre 0 et 10 PASS avec un pas de 0,05 PASS.
+Autrement dit, on calcules les cotisations d'un affilié de la CARMF à 0 PASS, puis à 0,05 PASS, puis à 0,10 PASS, et ainsi de suite jusqu'à 10 PASS et pour toutes les caisses.
+Dans un second temps, SICLOP calcule la nouvelle assiette puis toutes les cotisations et contributions sociales sont calculés sur cette nouvelle assiette. 
+Ces calculs bien qu'assez simple, on se limite a des additions et des multiplications, prennent un certain temps du fait du nombre d'individus et de situations différentes. 
+
+Après avoir calculé tous ces cas types, grâce aux données fournies par les caisses, SICLOP multiplie les cas types par le nombre d'individus réellement à chaque niveau de revenu.
+
+Une fois cette information produites, de nombreux modules, cette fois ci développés en langage python, permettent d'en extraire de l'information. Le plus intéressants et le plus utile d'entre eux s'appel 'resultats-ecarts'. Son role est d'effectuer une synthèse de la situation financières des caisses en sommant les situations individuelles de tous les affiliés et en comparant ces sommes avant et apres reforme.
+
+\begin{center}
+	\includegraphics[scale=0.53]{figures/chap2/format5B.png}
+\end{center}
+
+Il permet d'avoir un récapitulatif des impacts de la réforme caisse par caisse et domaine par domaine. Ici par exemple, on lira que l'impact de la réforme de l'assiette sur la CARMF secteur 1, toute finances publiques confondues est de 225 millions d'euros. Dont 5 millions pour la retraite de base, et 22 millions pour la retraite complémentaire. L'impact de la réforme, toutes professions libérales confondues est de 925 millions d'euros.
+
+
+\subsubsection{Exemple : modification du barème maladie}
+
+Une importante partie de mon temps a été consacré à mettre à jour et à développé de nouvelles fonctions pour SICLOP.
+
+Lors de nos travaux de chiffrages de la réforme, nous avons pu découvrir des erreurs dans nos méthodes de calculs de certaines cotisations.
+
+L'exemple de la participation de l'Assurance Maladie à la cotisation Maladie des professionnelles médicaux exerçant en libéral est intéressants.
+
+Afin de garantir des tarifs de prestations de soins stables à la population, l'Assurance Maladie et les médecins ont mis en place des conventions.
+Lorsque un médecin est conventionné Secteur 1 auprès de l'Assurance Maladie, il doit respecter une grille tarifaire. Ainsi, les patients de ce médecin sont remboursé par l'Assurance Maladie.
+Lorsque un médecin est conventionné en Secteur 2 auprès de l'Assurance Maladie, il est libre d'appliquer des dépassements d'honoraires. Ceux-ci doivent être fixés avec «tact et mesure» et doivent donc être «justifiés et mesurés». Le patient paye ici le tarif de base et les dépassements d'honoraires mais sont remboursés uniquement sur la base du tarif de base.
+Enfin un médecin peut etre conventionné en Secteur 3, il est completement libre d'appliquer les tarifs qu'il souhaite. Le remboursement offert à ses patients devient alors tres faible, il est fixé par l’article L. 162-5-10 du Code de la Sécurité sociale, et est égal à 16\% des tarifs conventionnels. 
+
+
+Le taux de cotisation maladie est déterminé de la manière suivante :
+
+\begin{table}[!ht]
+    \raggedleft
+    \caption{Bareme du taux de la cotisation maladie}
+    \begin{tabular}{|p{8.5cm}|p{6cm}|}
+    \hline \hline
+        \textbf{Revenus} & \textbf{Taux progressif} 
+        \\ \hline
+        Jusqu'à 20\% du PASS & 0 \% 
+        \\ \hline
+        De 20 à 40\% du PASS & entre 0 \% et 1,5 \% 
+        \\ \hline
+        De 40 à 60\% du PASS & entre 1,5 \% et 4 \% 
+        \\ \hline
+        De 60 à 110\% du PASS & entre 4 \% et 6,5 \% 
+        \\ \hline
+        De 110 à 200\% du PASS & entre 6,5 \% et 7,7 \% 
+        \\ \hline
+        De 200 à 300\% du PASS & entre 7,7 \% et 8,5 \% 
+        \\ \hline
+        Fraction de l’assiette au-delà de 300\% du PASS & 6,5 \% 
+        \\ \hline \hline
+    \end{tabular}
+\end{table}
+ 
+Le PASS est le plafond annuel de la sécurité sociale. En 2024 il s'élève à 46 368 €.
+Le BNC, pour Bénéfice Non Commerciaux est une mesure du résultat net de l'activité d'un professionnel libéral.
+
+Les médecins en contre partie du respect des tarifs de leurs secteurs bénéficient d’une prise en charge partielle de leurs cotisations maladies par l'Assurance Maladie.
+
+L’assiette de participation de l'AM est limitée aux revenus tirés de l’activité conventionnée nets de dépassements d’honoraires alors que l’assiette de la cotisation maladie due par le praticien prend en compte son revenu global, y compris les revenus provenant d’une activité professionnelle non salariée non conventionnée.
+Les professionnelles médicaux exerçant en libéral peuvent donc avoir une partie de leur activité conventionné et une autre non. Créant ainsi deux assiettes différentes. La première, englobant les activités conventionnées, sur laquelle la participation de l'AM sera calculée. La seconde, prenant en compte l'ensemble des revenus et sur laquelle les cotisations maladies seront calculées.
+
+Outre l'assiette de cotisation et de participation, il est également intéressant de considéré les différents taux qui s'appliquent à cette assiette.
+
+Pour un médecin conventionné en Secteur 1, le reste à charge pour le médecin est de 0,1\%. La participation de l'AM est calculé pour garantir ce principe et évolue de 0\% à 8,4\% selon un taux progressif. 
+Pour un médecin conventionné en Secteur 2, l'AM ne prend aucune participation. Le médecin a un taux qui varie de 0\% à 8,5\%. Le reste est à la charge du médecin. Il y a de plus une sur-cotisation de 3,25\% sur les revenus non-conventionnés.
+
+Dans la première version de notre code, nous calculions la cotisation maladie des professionnelles de santé comme ceci :
+
+\begin{itemize}
+    \item Une première fonction calcule le taux maladie à utiliser. A partir du BNC on détermine le taux maladie à appliquer en fonction de la tranche dans laquelle on se trouve.
+    \begin{equation}
+    \text{Taux Maladie} = \frac{\text{Taux Sup} - \text{Taux Inf}}{\text{Seuil}_{\text{supérieur}} - \text{Seuil}_{\text{inférieur}}} \times \left(\frac{\text{BNC}}{\text{PASS}} - \text{Seuil}_{\text{inférieur}}\right) + \text{Taux Inf}
+    \end{equation}
+    
+    Par exemple pour un BNC égale à 24300 € et le PASS actuel 2024 à 46 338 €. On se situe dans les seuils entre 40\% et 60\% du PASS. Le taux est donc linéaire entre 1,5 \% et 4 \%. 
+    
+    \begin{equation}
+    \text{Taux Maladie} = \frac{4\% - 1{,}5\%}{0{,}6 - 0{,}4} \times \left(\frac{24{,}300}{43{,}992} - 0{,}4\right) + 1{,}5\% = 3{,}404\%
+    \end{equation}
+
+    \item Une seconde fonction applique ce taux au BNC, ici on a donc
+    \begin{equation}
+    \text{Cotisation Maladie} = 46 338 \text{\euro} \times 3{,}404\% = 1577.35 \text{\euro}
+    \end{equation}
+
+    \item Une troisième fonction calcule la cotisation effectivement payé par le médecin en effectuant le calcul  
+    \begin{equation}
+    \text{Cotisation Maladie Effective} = 1577.35 \text{\euro} \times 0.001 = 1.57 \text{\euro}
+    \end{equation}
+
+\end{itemize}
+
+Il y a plusieurs erreurs dans cette méthode de calcul et quand nous nous en sommes rendus compte, j'ai été chargé de réécrire le code de ce processus.
+\begin{itemize}
+    \item La première et la plus évidentes des erreurs est la multiplication par 0,001 dans la troisième fonction.
+    Je pense que cette multiplication avait pour objectif de représenter le 0,1\% de reste à charge, après participation de l'AM. Mais le calcul est faux, pour connaître la cotisation du professionnel de santé, il aurait fallu multiplier sa cotisation par le ratio de 0,001 sur 0,065. En effet, c'est le ratio de la part des cotisation qui restent à la charge du professionnel de santé, sur l'ensemble de la cotisation maladie.
+    \begin{equation} Cotisation Maladie \times \frac{0{,}001}{0{,}065} \end{equation}
+    Pour éviter que cette erreur se reproduise, j'ai décider de calculer la cotisation maladie, le montant de la participation de l'AM, puis de soustraire la seconde à la première. Cela rend la lecture du code plus simple et plus claire.
+    \item De la première erreur découle un second problème. La participation de l'AM est prise en compte de la même manière quelque soit le conventionnement.
+    \item La troisième erreur de la méthode actuelle et qu'elle ne prend pas en compte la part d'activité non conventionné, sur laquelle la prise en charge de l'AM ne s'applique pas et sur laquelle il existe une sur-cotisation. J'ai donc contacté l'URSSAF afin de connaître la proportion des revenus non conventionnés pour chacune des professions médicales pour lesquelles SICLOP calcule une cotisation maladie. Grace à leurs données, nous savons par exemple que les médecins conventionnés Secteur 1 ont en moyenne 2,6\% de leurs revenus qui est non-conventionnés. Les médecins conventionnés Secteur 2 ont en moyenne 10,4\% de leurs revenus qui est non-conventionnés.
+\end{itemize}
+
+
+Après avoir identifié ces différents problèmes, j'ai pu réécrire le code comme ceci :
+
+\begin{itemize}
+    \item Une première fonction calcule le taux maladie à utiliser. A partir du BNC on détermine le taux maladie à appliquer en fonction de la tranche dans laquelle on se trouve. La formule reste la même qu'à l'équation 2.1.
+
+    \item Une seconde fonction applique ce taux au BNC. Si on reprend l'exemple utilisé plus haut, on a 
+    \begin{equation}
+    \text{Cotisation Maladie} = 46 338 \text{\euro} \times 3{,}404\% = 1577.35 \text{\euro}
+    \end{equation}
+
+    \item Une troisième fonction calcule la participation de l'AM. Celle ci n'est calculée que sur le revenu conventionné. Dans notre exemple on fait l'hypothèse que le médecin est conventionné Secteur 1 et on obtient le calcul suivant.
+    \begin{align}
+    \text{Participation AM} &= BNC \times (1 - \text{Part du revenu non conventionnés}) \times \text{Taux Maladie} \\
+    &= 46 338 \text{\euro} \times (1 - 2,6\%) \times 3{,}404\% \\
+    &= 1536,33 \text{\euro}
+    \end{align}
+
+    \item Une quatrième fonction permet de calculer la sur-cotisation à payer aux titres des revenus non-conventionnés. Si on continue avec notre exemple, on obtient le calcul suivant.
+    \begin{align}
+    \text{Sur-cotisation} &= BNC \times \text{Part du revenu non conventionnés}) \times 3,25\% \\
+    &= 46 338 \text{\euro} \times 2,6\% \times 3{,}25\% \\
+    &= 39,16 \text{\euro}
+    \end{align}    
+
+    \item Une cinquième fonction permet de calculer la cotisation effectivement versé par le professionnel de santé.
+    \begin{align}
+    \text{Cotisation Maladie Effective} &= \text{Cotisation Maladie} - \text{Participation AM} + \text{Sur-cotisation} \\
+    &= 1577,35 - 1536,33 + 39,16 \\
+    &= 80,18
+    \end{align}
+\end{itemize}
+
+Ainsi, pour un médecin conventionné en Secteur 1 ayant réalisé un BNC de 46 338 € dont 2,6\% de revenu non-conventionné, on passe d'une cotisation maladie de 1,57 € à une cotisation de 80,19 €.
+
+Ce travail de correction et d'amélioration de SICLOP a représenté une part importante de mon année à SD3. Nous verrons dans la partie suivante dans quel cadre SICLOP a pu être utilisé.
+
+
+\subsection{Echanges avec les caisses de retraites et recyclage de la perte en finances publiques}
+
+Une grande partie de la perte en finance publique a été recyclé grâce aux hausses du barème maladie et du taux du régime de base. Ces travaux ont été réalisés en collaboration avec l’Urssaf, la
+CNAM et la CNAV. Il reste maintenant 1,35 Md€ de baisse de prélèvements sociaux à "recycler".
+
+La détermination des barèmes de retraites complémentaires qui permettront de "recycler" cette somme a constitué une part importante du travail du pôle Actuariat. En effet, les analyses qui ont permit de déterminer le niveau du taux d'abattement, le nouveau barème ou encore le relèvement de taux du régime générale ont été réalisés en collaboration avec l'Urssaf, la CNAM et la CNAV.
+
+En revanche, le bureau 3C étant en charge de la tutelle des régimes complémentaires d'assurances vieillesses, ce travail nous incombes naturellement. Les caisses de retraites étant indépendantes, elles sont autonomes dans la fixation de leurs barèmes de cotisation. La modification des barèmes de cotisation et l'ampleur de leurs modifications sont des décisions qui sont prise par les caisses après concertation avec la DSS.
+
+Dans le cadre de cette réforme, c'est le gouvernement qui est a l'initiative, mais le VI de l’article 18 de de la LFSS 2024 prévoit donc un dialogue avec les caisses au cours de l'été 2024 puis l'envoie de lettres de cadrages. Ce dialogue permet  aux caisses d'être pleinement actrice du chantier de détermination des futurs barèmes de cotisations et permet également à la DSS de mettre son propre travail à l'épreuve.
+
+En tant que tutelle de ces caisses, nous sommes présents à leurs commissions de financement, commissions de réglementation et Conseil d'Administration. De plus, le travail de long terme que nous faisons avec ces caisses nous à amenés à accumuler beaucoup de  données sur ces populations. C'est ces données, décrites au début de cette partie, qui sont utilisés dans SICLOP pour faire des projections.
+
+SICLOP, en fournissant les impacts de la modification de l'assiette, des barèmes maladie et retraite de base sur les recettes des caisses de retraites de manière très précise nous permet de mesurer le montant de cotisation à récupérer chez chacune d'elles. Cette mesure est importante dans la mesure ou l'enveloppe de baisse de prélèvements sociaux ne peut pas être réalloué au hasard. Chaque caisse de retraite a un équilibre à trouver entre cotisation et prestation et cet équilibre ne doit pas être perturbé par la réforme. On cherchera donc, lors de la modification des barèmes à avoir un impact nul sur les recettes de chacune des caisses.
+
+Chaque caisse a un fonctionnement de son barème spécifique. Ces différents fonctionnement ont été codé dans SICLOP. Le montant des cotisations sont toujours progressif en fonctions du revenus. Le nouveau calcul de l'assiette et les différents plafonds et plancher de cotisations de chacune des caisses impliquent des effets de la reforme différents tout au long de la distribution des revenus. Un module de SICLOP nous permet donc d'apprécier ces différences entre les situations.
+Le deuxième objectif que doivent atteindre les nouveaux barèmes de cotisations, outre la création de nouveau droits, est de lisser les gains et pertes sur les différentes populations.
+
+Afin de trouver les barèmes de cotisation permettant aux caisses d'avoir un impact de la réforme absolument nul sur leurs recettes de cotisations, il a fallut procéder par itération. Le fichier 5B décrit précédemment et permettant de calculer la différence entre la situation avant et après réforme nous a été d'une très grande aide. Le fichier permettant d'apprécier les impacts tout le long de la distribution de revenu nous a également beaucoup aide.
+
+Continuons avec l'exemple de la CARMF. Avant réforme, le barème du RC est de 10,2 \% jusqu'à 3,5 PASS. 
+Les impacts de la réforme de l'assiette ont un impact négatif de 226 millions d'euros, toutes finances publiques confondues et de 26 millions d'euros sur le seul champ de la retraite complémentaire.
+A l'aide du fichier 5B, on va chercher le taux de RC pour lequel les impacts deviennent nuls. On a commencé par faire le test avec un taux de 10,5 \%, mais ce n'était pas suffisant. On a continué à augmenter progressivement le taux jusqu'à arriver à 12 \%.
+
+A ce niveau, l'impact de la réforme et des modifications de barèmes est nul pour les finances publiques.
+
+Un autre exemple intéressant est celui des avocats. Avant augmentation des barèmes de cotisation, l'impact de la réforme est de -34 millions d'euros. Mais un effet indésirable apparaît, les individus ayant des BNC de moins de 3 PASS ont de très importantes variations de BNC positives (jusqu'à 2,8 \%) alors que apres 3 PASS, les individus connaissent des variations négatives de leurs BNC (jusqu'à 1,5 \%). Ainsi le cout de la réforme est essentiellement suporté par les avocats réalisant les BNC les plus importants. Dans un soucis de justice social, cet effort serait légitime. Mais l'objectif de la réforme n'est pas celui-ci. On cherche à rendre la réforme la plus indolore possible. 
+
+\begin{center}
+	\includegraphics[scale=0.38]{figures/chap2/CNBFvariations.png}
+\end{center}
+
+Lors de notre recherche des nouveaux barèmes de RC permettant à la réforme d'avoir un impact nul pour la CNBF, nous avons donc essayer de rendre la courbe bleu pointillée du graphique ci-dessus la plus 'droite' possible. En effet, plus la courbe est droite et proche de zéro, plus l'impact de la réforme est nulle ET ce pour chaque segment de la distribution des revenus.
+
+Le bareme de la CNBF est un peu similaire à l'impot sur le revenu dans le sens ou il est progressif de la même manière. Les avocats peuvent également choisir une 'Classe'. Plus ils choisissent une classe élevée, plus leurs cotisations à la retraite sont importantes et plus ils accumulent de points. En réalité plus de 85 \% des cotisants à la CNBF choisissent la 'Classe 1', c'est donc en modifiant ses taux que l'impact sur les finances  de la CNBF sont vraiment significatifs.
+
+
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Revenu/Classes} & \textbf{de 1 € à 1 PASS €} & \textbf{1 PASS € à 2 PASS €} & \textbf{2 PASS € à 3 PASS €} & \textbf{3 PASS € à 4 PASS €} & \textbf{4 PASS € à 5 PASS €} \\ 
+\hline
+\textbf{C1}  & 5\%  & 9,60\%  & 11,20\%  & 12,80\%  & 14,40\%  \\ 
+\textbf{C2}  & 5,5\%  & 10,60\% & 12,45\%  & 14,30\%  & 16,15\%  \\ 
+\textbf{C3}  & 6,00\%  & 11,60\% & 13,70\%  & 15,80\%  & 17,90\%  \\ 
+\textbf{C3+} & 6,00\%  & 11,60\% & 13,70\%  & 15,80\%  & 20,40\%  \\ 
+\hline
+\end{tabular}
+}
+\caption{Taux et tranches de cotisations selon les classes avant la réforme}
+\end{table}
+
+Comme mentionné dans le paragraphe précédent, afin de rendre la courbe bleu pointillée la plus droite possible, nous avons uniquement modifié le taux applicable sur le BNC entre 1 euro et 1 PASS. Le passage de tous les taux de cette première tranche à 7,5 \% permet d'atteindre une neutralité parfaite de la réforme pour les finances publiques. Elle permet également de mieux distribuer l'effort des cotisants de la caisse comme on peut le voir dans le graphique ci-dessus. La courbe bleu pointillée, illustrant ce scénario, est plus proche de la ligne rouge, synonyme d'un impact nul.
+Le nouveau barème de la CNBF, après réforme serait donc celui ci :
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Revenu/Classes} & \textbf{de 1 € à 1 PASS €} & \textbf{1 PASS € à 2 PASS €} & \textbf{2 PASS € à 3 PASS €} & \textbf{3 PASS € à 4 PASS €} & \textbf{4 PASS € à 5 PASS €} \\ 
+\hline
+\textbf{C1}  & 7,5\%  & 9,60\%  & 11,20\%  & 12,80\%  & 14,40\%  \\ 
+\textbf{C2}  & 7,5\%  & 10,60\% & 12,45\%  & 14,30\%  & 16,15\%  \\ 
+\textbf{C3}  & 7,5\%  & 11,60\% & 13,70\%  & 15,80\%  & 17,90\%  \\ 
+\textbf{C3+} & 7,5\%  & 11,60\% & 13,70\%  & 15,80\%  & 20,40\%  \\ 
+\hline
+\end{tabular}
+}
+\caption{Taux et tranches de cotisations selon les classes avant la réforme}
+\end{table}
+
+
+Les scénarios de « recyclage » des baisses des prélèvements sociaux dans les régimes complémentaires ont été expertisés et ont fait l’objet d’échanges avec les représentants des régimes. Hormis le cas spécifique de la CARMF et des médecins secteur 2, les échanges techniques ont permis d’aboutir à des chiffrages et des scénarios faisant consensus et sur lesquels l'arbitrage du cabinet du ministère de la Santé a été sollicité.
+
+
+\subsection{Rédaction des notes de cadrages}
+
+Apres avoir trouvé les évolutions de barèmes optimaux pour chaque caisse et après validation du cabinet de la ministre. Nous avons du compiler nos chiffrages ainsi que nos préconisations pour neutraliser l'impact de la réforme sur les finances publiques dans des notes de cadrage. Ces notes sont des documents officiels envoyés par le Directeur de la Sécurité Sociale en personne. Ce sont donc des documents qui nous ont demandés beaucoup de soins à rédiger.
+Les notes de cadrage avait toutes la même structure mais les informations étaient spécifiques à chaque caisse.
+
+Dans une première partie, nous représentions les grands enjeux de la réforme. Dans une seconde partie, nous avons détailler les méthodes d'estimations des impacts financiers de la réforme.
+Dans une troisième partie sont développés les conséquences de la réforme de l’assiette sur les prélèvements sociaux et sur le régime complémentaire des différentes caisses. Et enfin une quatrième partie présente le cadre d’évolution des cotisations proposé par la DSS.
+
+
+\section{Conclusion}
+
+Pour conclure ce chapitre, je tiens à dire que cette expérience a été la plus importante et la plus instructive de mon alternance. Le suivi de la conception d'une réforme, la définition de ses objectifs principaux, l'estimation des ses impacts, le dialogue avec les partenaires sociaux, et la publication de décrets formalisant tout ce travail dans le droit sont les étapes nécessaires de la mise en place d'une politique publique. Avoir pu y prendre part a grandement amélioré ma compréhension du fonctionnement de l'Etat.
+
+Je vais maintenant me permettre d'ouvrir les perspectives que ces travaux amène. Cette réforme va créer une manne financière importante pour les caisses de retraites concernées. A court et moyen termes, cela va leurs permettre d'améliorer l'état de santé de leurs comptes. Mais à plus long terme, l'ouverture de nouveau droits implique une hausse des pensions à verser. Il sera donc important de veiller à l'équilibre de ces caisses à un horizon de 40 ans et plus.
+
+Le chiffrages de l'impact de cette réforme sur les cotisations futurs est un enjeu très important sur lequel le pôle a déjà sérieusement commencé à travailler. La vigilance des analystes en charge de ces chiffrages garantit la pérennité de ces caisses de retraites.

@@ -1,9 +1,9 @@
-# 📚 Mémoire de Master – Conception et évaluation de politiques publiques dans le cadre des retraites
+# Mémoire de Master – Conception et évaluation de politiques publiques dans le cadre des retraites
 
 Ce dépôt contient l’ensemble des fichiers LaTeX utilisés pour rédiger mon mémoire de Master 2 en Ingénierie Statistique et Financière à l’Université Paris-Panthéon-Assas. Ce travail a été mené en alternance au sein de la Direction de la Sécurité Sociale (bureau 3C), sous la direction de Joseph Lanfranchi (Université Paris II Panthéon-Assas) et de Taha Benabdelaziz (Direction de la Sécurité Sociale).
 
 
-## 📝 Résumé du mémoire
+## Résumé du mémoire
 
 ![](figures/chap1/panorama_regimes_retraites.png)
 
@@ -14,7 +14,7 @@ La seconde réforme concerne la simplification du calcul des cotisations sociale
 Ces deux réformes, bien que distinctes, illustrent les défis actuels d'équité, de simplification administrative et de durabilité des régimes de retraite en France, enjeux majeurs pour les politiques publiques.
 
 
-## 🧭 Plan du mémoire
+## Plan du mémoire
 
 - **Introduction**
   - Présentation du cadre institutionnel : DSS, bureau 3C, rôle des pôles Retraite, PSC et Actuariat.
